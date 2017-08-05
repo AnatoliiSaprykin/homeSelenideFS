@@ -1,0 +1,1188 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="author" content="Andrei Solntsev" />
+  <meta name="description" content="С чего начать?" />
+  <meta name="keywords" content="Selenide, Selenium, WebDriver, Test automation, ATDD, concise UI tests, Селенид, Селениум, вебдрайвер, автоматизация тестирования, автотесты, ТДД, АТДД, лаконичные тесты" />
+
+  <title>С чего начать?</title>
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="http://dimsemenov.com/plugins/magnific-popup/site-assets/all.min.css?v=0.9.9" />
+  <link rel="stylesheet" href="/assets/themes/ingmar/css/styles.css" />
+  <link rel="stylesheet" href="/assets/themes/ingmar/css/pygment_trac.css" />
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/rss.xml" />
+
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/plugins/ga/inpage_linkid.js" id="undefined"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="/assets/themes/ingmar/js/scale.fix.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+
+  <script src="http://dimsemenov.com/plugins/magnific-popup/dist/jquery.magnific-popup.min.js?v=0.9.9"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-39031927-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<script type="text/javascript" async="" src="http://selenide.disqus.com/embed.js"></script><link rel="preload" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.eceee602870fc4ed49dc5f89e270689e.css" /><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.9fcff11af667507b1757062f0192b821.js" /><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.aafec1a2f3fa1e486216be04908b0e3a.js" /><link rel="preload" as="script" href="https://disqus.com/next/config.js" /><script src="https://c.disquscdn.com/next/embed/alfie.f51946af45e0b561c60f768335c9eb79.js" async="" charset="UTF-8"></script></head>
+<body>
+<h1 style="display: none">С чего начать?</h1>
+<div class="head">
+<div class="wrapper">
+  <div class="service-links">
+    <a id="support" href="/support">Коммерческая поддержка</a>
+    <div id="languages">
+      <a id="lang_eng" href="http://selenide.org/quick-start.html?timestamp=8317108790544">EN</a>
+      <a id="lang_rus" href="http://ru.selenide.org/quick-start.html?timestamp=8317108790544">RU</a>
+    </div>
+  </div>
+  <div style="clear: both"></div>
+  <header>
+
+    <a href="/index.html"><img src="/images/selenide-logo-big.png" border="0" width="352" height="186" /></a>
+
+    
+
+    <ul class="main-menu-pages">
+  <li><a href="/quick-start.html">С чего начать?</a></li>
+  <li><a href="/documentation.html">Док</a></li>
+  <li><a href="/faq.html">ЧАВО</a></li>
+  <li><a href="/blog.html">Блог</a></li>
+  <li><a href="/javadoc.html">Javadoc</a></li>
+  <li><a href="/users.html">Пользователи</a></li>
+  <li><a href="/quotes.html">Отзывы</a></li>
+  <li style="display:none;"><a href="/thanks.html">Мы говорим спасибо</a></li>
+</ul>
+
+<div class="news">
+  <div class="news-line"><a href="/2017/06/26/selenide-4.5/">Вышла Selenide 4.5!</a></div>
+</div>
+
+<h3 style="display:none">Блог</h3>
+<div class="archive" style="display:none">
+  
+  
+
+
+  
+    
+    
+    
+    
+  
+    
+      <h2>2017</h2>
+      <h3>June</h3>
+      <ul>
+    
+  
+    <li><span>June 26, 2017</span> » <a href="/2017/06/26/selenide-4.5/">Вышла Selenide 4.5</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>February</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>February  9, 2017</span> » <a href="/2017/02/09/selenide-4.3/">Вышла Selenide 4.3</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>January 26, 2017</span> » <a href="/2017/01/26/selenide-4.2.1/">Selenide 4.2.1 released</a></li>
+  
+    
+      
+        </ul>
+        <h2>2016</h2>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>December 30, 2016</span> » <a href="/2016/12/30/selenide-4.2/">Вышла Selenide 4.2</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>December  1, 2016</span> » <a href="/2016/12/01/selenide-4.1/">Вышла Selenide 4.1</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>November</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>November 16, 2016</span> » <a href="/2016/11/16/selenide-on-topconf/">Доклад о Selenide на TopConf 2016</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>October</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>October 20, 2016</span> » <a href="/2016/10/20/selenide-vs-pure-selenium/">Обёртка или чистый вебдрайвер?</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>October 15, 2016</span> » <a href="/2016/10/15/selenide-4.0/">Вышла Selenide 4.0</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>October 14, 2016</span> » <a href="/2016/10/14/selenide-3.11/">Вышла Selenide 3.11</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>September 26, 2016</span> » <a href="/2016/09/26/selenide-3.10/">Вышла Selenide 3.10</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>September  3, 2016</span> » <a href="/2016/09/03/selenide-3.9.2/">Вышла Selenide 3.9.2</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>August 27, 2016</span> » <a href="/2016/08/27/selenide-3.9.1/">Вышла Selenide 3.9.1</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>August  6, 2016</span> » <a href="/2016/08/06/selenide-3.8/">Вышла Selenide 3.8</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>July  8, 2016</span> » <a href="/2016/07/08/selenide-3.7/">Вышла Selenide 3.7</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>June  1, 2016</span> » <a href="/2016/06/01/selenide-3.6/">Вышла Selenide 3.6</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>April 17, 2016</span> » <a href="/2016/04/17/airtickets/">Реальный опыт с Selenide: покупка авиабилетов</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>March 31, 2016</span> » <a href="/2016/03/31/selenide-3.5/">Вышла Selenide 3.5</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>February</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>February 11, 2016</span> » <a href="/2016/02/11/selenide-3.3/">Вышла Selenide 3.3</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>January</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>January 29, 2016</span> » <a href="/2016/01/29/selenide-3.2/">Вышла Selenide 3.2</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>January 17, 2016</span> » <a href="/2016/01/17/selenide-3.1/">Вышла Selenide 3.1</a></li>
+  
+    
+      
+        </ul>
+        <h2>2015</h2>
+        <h3>November</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>November 30, 2015</span> » <a href="/2015/11/30/selenide-3.0/">Вышла Selenide 3.0</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>November 30, 2015</span> » <a href="/2015/11/30/selenide-2.25/">Изменения в Selenide 2.25</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>November 16, 2015</span> » <a href="/2015/11/16/selenide-changes-license-to-mit/">Selenide меняет лицензию на MIT</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>November 13, 2015</span> » <a href="/2015/11/13/selenide-on-devoxx/">Презентация Selenide на Devoxx 2015</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>November  8, 2015</span> » <a href="/2015/11/08/selenide-2.24/">Изменения в Selenide 2.24</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>September 23, 2015</span> » <a href="/2015/09/23/selenide-on-seleniumconf/">Доклад о Selenide на SeleniumConf 2015</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>September 15, 2015</span> » <a href="/2015/09/15/selenide-2.23/">Изменения в Selenide 2.23</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>August 29, 2015</span> » <a href="/2015/08/29/selenide-2.22/">Изменения в Selenide 2.21 и 2.22</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>July 27, 2015</span> » <a href="/2015/07/27/selenide-2.20/">Изменения в Selenide 2.20</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>June</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>June 21, 2015</span> » <a href="/2015/06/21/selenide-2.19/">Изменения в Selenide 2.19</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>May</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>May  6, 2015</span> » <a href="/2015/05/06/selenide-2.18/">Изменения в Selenide 2.18</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>May  5, 2015</span> » <a href="/2015/05/05/selenide-2.16-and-2.17/">Изменения в Selenide 2.16 и 2.17</a></li>
+  
+    
+      
+        </ul>
+        <h2>2014</h2>
+        <h3>December</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>December 28, 2014</span> » <a href="/2014/12/28/how-to-test-gmail/">Как тестировать GMail</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>December 17, 2014</span> » <a href="/2014/12/17/time-for-refactoring/">Где взять время на рефакторинг</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>December 13, 2014</span> » <a href="/2014/12/13/the-fast-and-the-continuous/">The fast and the continuous @ SQA Days 16</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>December  9, 2014</span> » <a href="/2014/12/09/you-find-wrong-bugs/">Вы находите не те ошибки</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>November</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>November  3, 2014</span> » <a href="/2014/11/03/selenide-2.15/">Изменения в Selenide 2.15</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>October</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>October 12, 2014</span> » <a href="/2014/10/12/selenide-at-confetqa/">Доклад про Selenide на конференции ConfeT&amp;QA</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>September</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>September 28, 2014</span> » <a href="/2014/09/28/selenide-2.13-and-2.14/">Изменения в Selenide 2.13 и 2.14</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>September 25, 2014</span> » <a href="/2014/09/25/how-to-start-writing-ui-tests/">Как начать писать UI тесты за 10 минут</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>August 25, 2014</span> » <a href="/2014/08/25/selenide-usage-notes/">Заметки об использовании Selenide: IE, TestNG, Bootstrap dropdown</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>August  8, 2014</span> » <a href="/2014/08/08/shorten-your-code/">Укороти свой код!</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>July  5, 2014</span> » <a href="/2014/07/05/selenide-2.12/">Изменения в Selenide 2.12</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>May</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>May 23, 2014</span> » <a href="/2014/05/23/selenide-2.11/">Изменения в Selenide 2.11</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>April 27, 2014</span> » <a href="/2014/04/27/selenide-2.10/">Изменения в Selenide 2.10</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>March</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>March 15, 2014</span> » <a href="/2014/03/15/selenide-2.9/">Изменения в Selenide 2.9</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>March 12, 2014</span> » <a href="/2014/03/12/selenide-downloads/">Selenide downloads: 200 уникальных IP</a></li>
+  
+    
+          
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>March 11, 2014</span> » <a href="/2014/03/11/selenide-in-5-minutes/">Selenide за пять минут от Glen Smith</a></li>
+  
+    
+      
+        </ul>
+        <h2>2013</h2>
+        <h3>October</h3>
+        <ul>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>October  4, 2013</span> » <a href="/2013/10/04/selenide-tshirt/">Футболка Selenide</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>August</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>August 29, 2013</span> » <a href="/2013/08/29/selenide-harlem-shake/">Selenide Harlem Shake</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>July</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>July 15, 2013</span> » <a href="/2013/07/15/can-phantomjs-take-screenshots/">Может ли PhantomJS делать скриншоты?</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>May</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>May  9, 2013</span> » <a href="/2013/05/09/video-selenide-on-seleniumcamp/">Видео: Selenide на SeleniumCamp 2013</a></li>
+  
+    
+          
+        
+          </ul>
+          <h3>April</h3>
+          <ul>
+        
+      
+    
+  
+    
+    
+    
+    
+  
+    
+  
+    <li><span>April 23, 2013</span> » <a href="/2013/04/23/what-is-selenide/">Что такое Selenide</a></li>
+  
+    
+      </ul>
+    
+  
+
+
+  <a href="/archive.html" class="right small">Блог</a>
+</div>
+
+  </header>
+  </div>
+</div>
+<div class="main">
+
+<section>
+    
+<div class="short howto">
+  <div class="wrapper-color-content">
+    <h3>С чего начать?</h3>
+    <h4>Начать использовать Selenide очень просто. Не нужно читать тонны документации. Не нужно покупать тренинг.</h4>
+
+ Просто добавь в проект <a href="https://search.maven.org/remotecontent?filepath=com/codeborne/selenide/4.5.1/selenide-4.5.1.jar">selenide.jar</a> и начинай писать тест.<br />
+
+  </div>
+</div>
+
+
+<div class="wrapper-content howto">
+  <section>
+    
+<p><a class="video right" href="http://vimeo.com/106867878">
+  Как написать UI тест за 10 минут
+</a></p>
+
+<h3 id="для-пользователей-maven">Для пользователей Maven:</h3>
+
+<p>Добавь в файл pom.xml:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>com.codeborne<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>selenide<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>4.5.1<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="для-пользователей-ivy">Для пользователей Ivy:</h3>
+
+<p>Добавь в файл ivy.xml:</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ivy-module&gt;</span>
+  <span class="nt">&lt;dependencies&gt;</span>
+    <span class="nt">&lt;dependency</span> <span class="na">org=</span><span class="s">"com.codeborne"</span> <span class="na">name=</span><span class="s">"selenide"</span> <span class="na">rev=</span><span class="s">"4.5.1"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/dependencies&gt;</span>
+<span class="nt">&lt;/ivy-module&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="для-пользователей-gradle">Для пользователей Gradle:</h3>
+
+<p>Добавь в файл build.gradle:</p>
+
+<div class="language-groovy highlighter-rouge"><pre class="highlight"><code><span class="n">dependencies</span> <span class="o">{</span>
+  <span class="n">testCompile</span> <span class="s1">'com.codeborne:selenide:4.5.1'</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+
+<h2 id="начинай-писать-тест">Начинай писать тест</h2>
+
+<p>Вот так просто! Больше никакой волокиты, начинай писать тест.</p>
+
+<p>Импортируй нужный класс:</p>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">static</span> <span class="n">com</span><span class="o">.</span><span class="na">codeborne</span><span class="o">.</span><span class="na">selenide</span><span class="o">.</span><span class="na">Selenide</span><span class="o">.*;</span>
+<span class="kn">import</span> <span class="nn">static</span> <span class="n">com</span><span class="o">.</span><span class="na">codeborne</span><span class="o">.</span><span class="na">selenide</span><span class="o">.</span><span class="na">Condition</span><span class="o">.*;</span>
+</code></pre>
+</div>
+
+<p>и пиши тест:</p>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Test</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">userCanLoginByUsername</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">open</span><span class="o">(</span><span class="s">"/login"</span><span class="o">);</span>
+  <span class="err">$</span><span class="o">(</span><span class="n">By</span><span class="o">.</span><span class="na">name</span><span class="o">(</span><span class="s">"user.name"</span><span class="o">)).</span><span class="na">setValue</span><span class="o">(</span><span class="s">"johny"</span><span class="o">);</span>
+  <span class="err">$</span><span class="o">(</span><span class="s">"#submit"</span><span class="o">).</span><span class="na">click</span><span class="o">();</span>
+  <span class="err">$</span><span class="o">(</span><span class="s">".loading_progress"</span><span class="o">).</span><span class="na">should</span><span class="o">(</span><span class="n">disappear</span><span class="o">);</span> <span class="c1">// Само подождёт, пока элемент исчезнет</span>
+  <span class="err">$</span><span class="o">(</span><span class="s">"#username"</span><span class="o">).</span><span class="na">shouldHave</span><span class="o">(</span><span class="n">text</span><span class="o">(</span><span class="s">"Hello, Johny!"</span><span class="o">));</span> <span class="c1">// Само подождёт, пока у элемента появится нужный текст</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+
+<p>И готово!</p>
+
+<p>Можно использовать любой фреймворк по вкусу: JUnit, TestNG, Cucumber, ScalaTest, JBehave - что душа пожелает.</p>
+
+<p>Запускать как обычные юнит-тесты. Можно из IDE, можно ANT скриптом, можно “mvn test”.</p>
+
+<h3 id="хотите-увидеть-работающий-пример">Хотите увидеть работающий пример?</h3>
+
+<p>Мы создали группу <a href="https://github.com/selenide-examples">Selenide examples</a> на гитхабе, в которой будут различные примеры использования Selenide:</p>
+
+<ul>
+  <li>для тестирования <a href="https://github.com/selenide-examples/gmail/tree/master/test/org/selenide/examples/gmail">почтовика Gmail</a>,</li>
+  <li>для тестирования <a href="https://github.com/selenide-examples/google/blob/master/test/org/selenide/examples/google/selenide_page_object/GoogleTest.java">поиска Google</a>.</li>
+  <li>для тестирования настоящего <a href="https://github.com/selenide-examples/selenide-allure-junit/blob/master/src/test/java/org/selenide/examples/InternetBankTest.java">интернет-банка</a></li>
+  <li><a href="https://github.com/selenide-examples/hangman/blob/master/test/uitest/selenide/HangmanSpec.java">игра Виселица</a> - эталонный open-source проект, в котором используется Selenide</li>
+</ul>
+
+<p>и т.д.</p>
+
+<h3 id="поделитесь-с-нами-своими-примерами">Поделитесь с нами своими примерами!</h3>
+
+<p>Если у вас есть свои примеры использования Selenide, смело присылайте их нам!
+Нам было бы очень интересно на них взглянуть.</p>
+
+<h3 id="видеоурок">Видеоурок</h3>
+<iframe src="//player.vimeo.com/video/106867878" width="800" height="450" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p><a href="http://vimeo.com/106867878">Как написать UI тест за 10 минут</a> from <a href="http://vimeo.com/user20427140">Selenide</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>Туториал по Selenide</p>
+
+    <br />
+    <br />
+    
+
+
+  <div id="disqus_thread"><iframe id="dsq-app4508" name="dsq-app4508" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="https://disqus.com/embed/comments/?base=default&amp;f=selenide&amp;t_u=http%3A%2F%2Fru.selenide.org%2Fquick-start.html%3Ftimestamp%3D8317108790544&amp;t_d=%D0%A1%20%D1%87%D0%B5%D0%B3%D0%BE%20%D0%BD%D0%B0%D1%87%D0%B0%D1%82%D1%8C%3F&amp;t_t=%D0%A1%20%D1%87%D0%B5%D0%B3%D0%BE%20%D0%BD%D0%B0%D1%87%D0%B0%D1%82%D1%8C%3F&amp;s_o=default#version=ddf43801e4a13666522a53b88c2abbc4" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 404px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe><iframe id="indicator-north" name="indicator-north" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 776px !important; border: none !important; overflow: hidden !important; top: 0px !important; min-width: 776px !important; max-width: 776px !important; position: fixed !important; z-index: 2147483646 !important; height: 0px !important; min-height: 0px !important; max-height: 0px !important; display: none !important;"></iframe><iframe id="indicator-south" name="indicator-south" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 776px !important; border: none !important; overflow: hidden !important; bottom: 0px !important; min-width: 776px !important; max-width: 776px !important; position: fixed !important; z-index: 2147483646 !important; height: 0px !important; min-height: 0px !important; max-height: 0px !important; display: none !important;"></iframe></div>
+<script type="text/javascript">
+    
+    var disqus_shortname = 'selenide'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;</noscript>
+
+
+
+
+
+  </section>
+</div>
+
+</section>
+
+ <div class="foot">
+   <div class="wrapper">
+  <footer>
+    <!--<p><small>Hosted on <a href="http://pages.github.com/">GitHub Pages</a> using the <a href="https://github.com/sodabrew/theme-dinky">Dinky theme</a> for <a href="http://jekyllbootstrap.com/">Jekyll Bootstrap</a></small></p>-->
+    <p>
+
+        </p><div>The project is maintained by</div> <a href="https://github.com/codeborne">
+        <img src="/images/codeborne-logo.png" width="300" height="49" /></a>
+
+    <p></p>
+  </footer>
+   </div>
+ </div>
+
+<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+
+<script type="text/javascript">&lt;!--
+document.getElementById('lang_eng').setAttribute("href", window.location.href.replace(/\/\/ru./, '//'));
+document.getElementById('lang_rus').setAttribute("href", window.location.href);
+
+$(function(){
+  $('.video').magnificPopup({
+    type: 'iframe',
+    enableEscapeKey: true
+  });
+});
+
+//--&gt;
+</script>
+
+
+</div><iframe style="display: none;"></iframe></body></html>
