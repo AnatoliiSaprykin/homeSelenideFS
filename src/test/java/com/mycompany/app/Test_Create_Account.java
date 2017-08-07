@@ -9,16 +9,21 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import pageObject.FS_Account;
 import sys.Credentials;
 import sys.Load_CRM_enter_Credentials;
 
-import static com.codeborne.selenide.Condition.appear;
-import static com.codeborne.selenide.Condition.checked;
-import static com.codeborne.selenide.Condition.visible;
+import java.awt.*;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
+
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.switchTo;
 
 public class Test_Create_Account {
 
@@ -43,7 +48,20 @@ public class Test_Create_Account {
        Load_CRM_enter_Credentials.enter_creds(Credentials.emailTrial_fs, Credentials.pASSWORD);
 
        Load_CRM_enter_Credentials.Sign_In_button();
+       $(By.cssSelector("#TabSFA")).shouldBe(enabled).click();
+       $(By.xpath(".//*[@id='nav_accts']/span[1]/span/img")).shouldBe(enabled).click();
+       $(By.xpath(".//*[@id='account|NoRelationship|HomePageGrid|Mscrm.HomepageGrid.account.NewRecord']/span/a")).
+               shouldBe(enabled).click(); // clicks on New button
 
+
+        $("div.ms-crm-Inline-HasError:nth-child(1)").click();
+        $(By.xpath(".//*[@id='header_notescontrol']/a[2]")).click();
+
+        $(By.xpath(".//*[@id='name']/div[1]")).hover();
+        $(By.xpath(".//*[@id='name']/div[1]")).click();
+        System.out.println("clicked label");
+        $(By.xpath(".//*[@id='name_i']")).click();
+        $(By.xpath(".//*[@id='name_i']")).setValue("123");
 
 
     }
